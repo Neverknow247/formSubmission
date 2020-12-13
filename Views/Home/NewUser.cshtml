@@ -1,0 +1,31 @@
+@model User
+<form asp-action="Create" asp-controller="Home" method="post">
+    <div class="content">
+        <span asp-validation-for="FirstName"></span>
+        <div class="section">
+            <label asp-for="FirstName"></label>
+            <input asp-for="FirstName">
+        </div>
+        <span asp-validation-for="LastName"></span>
+        <div class="section">
+            <label asp-for="LastName"></label>
+            <input asp-for="LastName">
+        </div>
+        <span asp-validation-for="Age"></span>
+        <div class="section">
+            <label asp-for="Age"></label>
+            <input asp-for="Age">
+        </div>
+        <span asp-validation-for="Email"></span>
+        <div class="section">
+            <label asp-for="Email"></label>
+            <input asp-for="Email">
+        </div>
+        <span asp-validation-for="Password"></span>
+        <div class="section">
+            <label asp-for="Password"></label>
+            <input asp-for="Password">
+        </div>
+        <input value="Add User" type="submit">
+    </div>
+</form>
